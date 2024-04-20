@@ -14,7 +14,6 @@ namespace WebApplication1.Controllers
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IWishListRepository wishListRepository;
-
         public WishListController(UserManager<ApplicationUser> userManager, IWishListRepository wishListRepository)
         {
             this.userManager = userManager;
