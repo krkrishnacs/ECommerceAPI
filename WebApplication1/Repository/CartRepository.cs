@@ -6,7 +6,6 @@ namespace WebApplication1.Repository
     public class CartRepository : ICartRepository
     {
         Context context;
-
         // inject Context
         public CartRepository(Context _context)//ask context not create 
         {
@@ -20,7 +19,6 @@ namespace WebApplication1.Repository
                  .Where(c => !c.IsDeleted)
                  .ToList();
         }
-
         public Cart GetById(int id)
         {
             return context.carts
